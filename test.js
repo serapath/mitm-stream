@@ -1,11 +1,3 @@
-# mitm-stream
-creates a connected replacement for an original duplex stream and gives access to two transforms to intercept messages
-
-# usage
-
-`npm install mitm-stream`
-
-```js
 var through2 = require('through2')
 var duplexify = require('duplexify')
 var opts = { objectMode: true }
@@ -41,5 +33,3 @@ var replacement = mitm(original, function (original2replacement, replacement2ori
 
 replacement.write('pong')
 replacement.on('data', function (data) { console.log('R',data) })
-
-```

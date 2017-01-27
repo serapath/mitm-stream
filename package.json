@@ -1,6 +1,6 @@
 {
   "name": "mitm-stream",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "creates a connected replacement for an original duplex stream and gives access to two transforms to intercept messages",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,8 @@
   "dependencies": {
     "duplexify": "^3.5.0",
     "readable-stream": "^2.2.2"
+  },
+  "devDependencies": {
+    "through2": "^2.0.3"
   }
 }
